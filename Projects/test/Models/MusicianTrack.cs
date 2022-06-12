@@ -1,5 +1,5 @@
 ﻿using System;
-namespace kolokwium_s20250.Models
+namespace Test.Models
 {
 	public class MusicianTrack
 	{

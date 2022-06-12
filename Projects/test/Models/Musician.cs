@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace kolokwium_s20250.Models
+namespace Test.Models
 {
     public class Musician
 {
@@ -10,7 +10,8 @@ namespace kolokwium_s20250.Models
     public string LastName { get; set; }
     public string Nickname { get; set; }
 
-    public virtual ICollection<MusicianTrack> MusicianTrack { get; set; }
+        public virtual ICollection<MusicianTrack> musicianTrak { get; set; }
+
 }
 }
 

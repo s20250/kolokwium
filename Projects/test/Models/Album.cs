@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace kolokwium_s20250.Models
+namespace Test.Models
 {
     public class Album
     {
@@ -11,8 +11,11 @@ namespace kolokwium_s20250.Models
         public string PublishDate { get; set; }
         public int IdMusicLabel { get; set; }
 
-        public virtual ICollection<Track> track {get; set;}
+        public virtual ICollection<Track> track { get; set; }
         public virtual MusicLabel musicLabel { get; set; }
+
+        //public virtual ICollection<Track> track { get; set; }
+        //public virtual MusicLabel musicLabel { get; set; }
 
     }
 }

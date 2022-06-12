@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Threading.Tasks;
-using kolokwium_s20250.Services;
+using Test.Services;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Mvc;
 using RouteAttribute = Microsoft.AspNetCore.Components.RouteAttribute;
 
-namespace kolokwium_s20250.Controllers
+namespace Test.Controllers
 {
 
     [Route("api/[controller]")]
@@ -20,12 +20,12 @@ namespace kolokwium_s20250.Controllers
 
         [HttpGet]
 
-        public async Task<IActionResult> GetAlbums(int idAlbum)
+        public async Task<IActionResult> GetAlbums(int IdAlbum)
         {
             try
             {
-                if (idAlbum != null)
-                    return Ok(await _ialbumDbService.GetAlbums(idAlbum));
+                if (IdAlbum > 0)
+                    return Ok(await _ialbumDbService.GetAlbums(IdAlbum));
                 return Ok(await _ialbumDbService.GetAlbums());
             }
             catch (System.Exception)

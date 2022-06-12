@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace kolokwium_s20250.Models
+namespace Test.Models
 {
 	public class MusicLabel
 	{
